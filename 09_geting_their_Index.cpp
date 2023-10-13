@@ -1,3 +1,6 @@
+/*
+Elemnt at therir Right Index*/
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()

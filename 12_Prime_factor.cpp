@@ -8,7 +8,7 @@ public:
   void printPrimeFactors(int n) {
 
     cout << "Prime Factors : ";
-    for (int i = 2; n > 1; i++) {
+    for (int i = 2; n > 1; i++) {  //IMP
 
         while (n % i == 0) {
 
@@ -20,7 +20,7 @@ public:
 } ;
 int main() {
 
-  int n = 12;
+  int n = 80;
 
   PrimeFactors p1 ;
   p1.printPrimeFactors(n)  ;

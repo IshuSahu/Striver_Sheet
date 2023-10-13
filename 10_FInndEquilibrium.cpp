@@ -13,7 +13,7 @@ Explanation: The sum of the numbers before index 2 is: 1 + -1 = 0
 The sum of the numbers after index 2 is: 0
 */
 using namespace std;
-int findEquilibriumIdx(int *arr, int n)
+int findEquilibriumIdx1(int *arr, int n)
 {
 	int leftsum = 0;
 	int rightsum = 0;
@@ -46,7 +46,7 @@ int findEquilibriumIdx(int nums[], int n)
 	for (int i = 0; i < n; i++)
 	{
 		totalSum += nums[i];
-	}
+	} 
 	int leftSum = 0, rightSum = totalSum;
 	for (int i = 0; i < n; i++)
 	{
@@ -62,7 +62,7 @@ int findEquilibriumIdx(int nums[], int n)
 int main()
 {
 	int n = 5;
-	int arr[] = {2, 3, -1, 8, 4};
+	int arr[] = {2, 3, -1, 8, 4}; //Output: 3
 	int equilibriumidx = findEquilibriumIdx(arr, n);
 	cout << equilibriumidx << endl;
 	return 0;

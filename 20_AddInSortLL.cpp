@@ -46,7 +46,7 @@ int main() {
     head->next->next->next->next->next = new Node(80);
 
     Solution solution;
-    int dataToInsert = 19;
+    int dataToInsert = 70;
     head = solution.sortedInsert(head, dataToInsert);
 
     printList(head);

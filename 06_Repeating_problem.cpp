@@ -45,7 +45,7 @@ void findNonRepeatingElements(vector<int>& arr) {
 
 
 int main() {
-    vector<int> arr = {1,1,2,3,4,4,5,2};
+    vector<int> arr = {1,2,-1,1,3};
     findRepeatingElements(arr);
     findNonRepeatingElements(arr);
     return 0;
