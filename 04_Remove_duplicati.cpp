@@ -34,33 +34,59 @@
 /*
 Remove Duplicate form the Unsorted array: Time/Space Complexity : O(n)
 */
-#include <bits/stdc++.h>
-using namespace std ;
+// #include <bits/stdc++.h>
+// using namespace std ;
 
-class removeDuplicate {
+// class removeDuplicate {
 
-public:
+// public:
 
-    void duplicate(int arr[], int n) {
+//     void duplicate(int arr[], int n) {
 
-        map<int, int>mp ;
+//         map<int, int>mp ;
 
-        for (int i = 0; i < n; i++) {
-            if (mp.find(arr[i]) == mp.end()) {
-                cout << arr[i] << " ";
-                mp[arr[i]]++;
-            }
-        }
+//         for (int i = 0; i < n; i++) {
+//             if (mp.find(arr[i]) == mp.end()) {
+//                 cout << arr[i] << " ";
+//                 mp[arr[i]]++;
+//             }
+//         }
+//     }
+
+// } ;
+// int main() {
+
+//     int arr[] = {4, 3, 9, 2, 4, 1, 10,2, 89, 34} ;
+//     int n = 10  ;
+
+//     removeDuplicate d1  ;
+//     d1.duplicate(arr, n) ;
+
+//     return 0 ;
+// }
+
+
+
+#include<bits/stdc++.h>
+
+using namespace std;
+int removeDuplicates(int arr[], int n)
+{
+  int i = 0;
+  for (int j = 1; j < n; j++) {
+    if (arr[i] != arr[j]) {
+      i++;
+      arr[i] = arr[j];
     }
-
-} ;
+  }
+  return i + 1;
+}
 int main() {
-
-    int arr[] = {4, 3, 9, 2, 4, 1, 10,2, 89, 34} ;
-    int n = 10  ;
-
-    removeDuplicate d1  ;
-    d1.duplicate(arr, n) ;
-
-    return 0 ;
+  int arr[] = {1,1,2,2,2,3,3};
+  int n = sizeof(arr)/sizeof(arr[0]);
+  int k = removeDuplicates(arr, n);
+  cout << "The array after removing duplicate elements is " << endl;
+  for (int i = 0; i < k; i++) {
+    cout << arr[i] << " ";
+  }
 }

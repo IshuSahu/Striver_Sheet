@@ -24,8 +24,6 @@ void getElements(int arr[], int n){
         }
     }
     cout<<second_small<<" "<<second_large<<endl;
-    
-
 }
 void GetSwap(int *arr, int n,int k){
     int start = 0;
