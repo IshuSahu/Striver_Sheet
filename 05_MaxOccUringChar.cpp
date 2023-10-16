@@ -1,25 +1,20 @@
 #include <iostream>
 using namespace std;
-string maxOccurringChar(string str) {
-   string ans ="";
-   for (int i = 0; i < str.length(); i++)
-   {
-        int j=0;
-        for (j = 0; j <i ; j++)
-        {
-            if(str[i]==str[j]){
-                break;
-            }
-        }
-        if(i==j){
-            ans+=str[i];
-        }
-        
+char maxOccurringChar(string str) {
+   char ans;
+   int maxfreq = 0, n = str.length();
+   int count[256] = {0};
+   for (int i = 0; i < n; i++) {
+      count[str[i]]++;
+      if (count[str[i]] > maxfreq) {
+         maxfreq = count[str[i]];
+         ans = str[i];
+      }
    }
-   
    return ans;
-}
+} 
+
 int main() {
-    string str = "janakram";
-   cout << "After Remove duplicate: " << maxOccurringChar(str) << endl;
-}
+   string str = "takeuforward";
+   cout << "Maximum occurring character is " << maxOccurringChar(str) << endl;
+} 

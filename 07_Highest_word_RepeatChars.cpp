@@ -71,7 +71,7 @@ public:
 
         for (int left = 0; left < len;) {
 
-            int right = left + 1 ;
+            int right = left + 1;
             while (str[right] != ' ' && right < len) {
                 right++ ;
             }
@@ -112,8 +112,9 @@ public:
 };
 int main() {
 
-    string str = "abcdefg google microsoft"  ;
+    string str = "abcdefg google mirosoft"  ;
     Solution obj ;
     obj.HighestRepeatedLetters(str)  ;
+
     return 0 ;
 }

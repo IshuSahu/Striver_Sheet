@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-string maxOccurringChar(string str) {
+string Remove_duplicate(string str) {
    string ans ="";
    for (int i = 0; i < str.length(); i++)
    {
@@ -8,10 +8,11 @@ string maxOccurringChar(string str) {
         for (j = 0; j <i ; j++)
         {
             if(str[i]==str[j]){
+                // str[i] = (char)(str[i]-32);
                 break;
             }
         }
-        if(i==j){
+        if(i==j){   //Index same
             ans+=str[i];
         }
         
@@ -19,7 +20,21 @@ string maxOccurringChar(string str) {
    
    return ans;
 }
+string LowerToUpper(string s) {
+        
+        string ans="";
+        
+        for(int i=0 ;i<s.length(); i++){
+            if(s[i]==s[i+1]){
+                ans+= (char)(s[i]-32);
+                i++;
+            }else{
+                ans+=s[i];
+            }
+        }
+    return ans;
+    }
 int main() {
-    string str = "janakram";
-   cout << "After Remove duplicate: " << maxOccurringChar(str) << endl;
+    string str = "ISSHHU";
+   cout << "After Remove duplicate: " << Remove_duplicate(str) << endl;
 }
