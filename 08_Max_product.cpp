@@ -11,7 +11,7 @@ int maxProductSubArray(vector<int>& nums) {
         for(int j=i+1;j<nums.size();j++) {
            result = max(result,p);
            p *= nums[j];
-        }
+        } 
         result = max(result,p);//manages (n-1)th term 
     }
     return result;

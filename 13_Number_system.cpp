@@ -46,7 +46,7 @@ int main()
     else if(n%3==2){
         s = "0"+s;
     }
-    	n = s.length();
+    n = s.length();
     for (int i = 0; i < n; i+=3)
     {
         int temp = (s[i]-'0')*4  +  (s[i+1] -'0')*2 + (s[i+2] -'0')*1;

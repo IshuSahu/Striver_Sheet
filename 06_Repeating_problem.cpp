@@ -33,8 +33,7 @@ void findNonRepeatingElements(vector<int>& arr) {
     cout<<"\nThe Non-repeating elements are: ";
     for(int i=0;i<arr.size();i++) {
         if(arr[i] == arr[i+1]) {
-            i++;
-            
+            i++;   
         }
         else{
             cout<<arr[i]<<" ";

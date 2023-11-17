@@ -1,6 +1,6 @@
 // #include<bits/stdc++.h>
 // /*
-//     Function in Hashset STL:
+//     Function in Hashset STL: O(log(N))
 //     set.find
 //     set.insert()
 //     set.erase()
@@ -11,7 +11,7 @@
 // int removeDuplicates(int arr[], int n) {
 //   set < int > set;
 //   for (int i = 0; i < n; i++) {
-//     set.insert(arr[i]);
+//     set.insert(arr[i]);  
 //   }
 //   int k = set.size();
 //   int j = 0;
@@ -46,7 +46,7 @@ Remove Duplicate form the Unsorted array: Time/Space Complexity : O(n)
 //         map<int, int>mp ;
 
 //         for (int i = 0; i < n; i++) {
-//             if (mp.find(arr[i]) == mp.end()) {
+//             if (mp.find(arr[i]) == mp.end()) {   //O(1) on average.
 //                 cout << arr[i] << " ";
 //                 mp[arr[i]]++;
 //             }

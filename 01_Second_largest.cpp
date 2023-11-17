@@ -43,8 +43,8 @@ int main(){
     int arr[]={1,2,4,6,7,5};
     int n=sizeof(arr)/sizeof(arr[0]);
     getElements(arr,n);
-// int k=2;
-    // GetSwap(arr,n,k);
+    int k=2;
+    GetSwap(arr,n,k);
     return 0;
 
 }
