@@ -17,3 +17,25 @@ class BuyandSell {
         System.out.println("Maximum profit will be: "+ maxProfit(arr));
     }    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

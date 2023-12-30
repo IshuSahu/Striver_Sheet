@@ -5,13 +5,12 @@ class ContainDuplicates {
 
     static boolean containsDuplicate(int arr[]){
         HashSet<Integer> hashSet = new HashSet<>();
-        for(int i=0;i<arr.length;i++){
-            hashSet.add(arr[i]);
+        for(int i=0;i<arr.length;i++){ 
+            hashSet.add(arr[i]); 
         }
         if(arr.length > hashSet.size()){
             return true ;
         }
-
         return false;
 
         /* OR

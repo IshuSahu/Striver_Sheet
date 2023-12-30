@@ -15,10 +15,8 @@ bool isSubset1(int *arr1, int m, int *arr2, int n){
 			}
 		}
 		if(present == false) return false;
-		
 	}
 	return true;
-	
 }
 //  optimal (nlogm);
 #include <bits/stdc++.h>

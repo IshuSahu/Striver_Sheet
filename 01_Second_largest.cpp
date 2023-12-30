@@ -10,7 +10,7 @@ void getElements(int arr[], int n){
     int large = INT_MIN, second_large= INT_MIN;
     int count=0;
     for (int i = 0; i < n; i++)
-    {
+    {   
         small = min(small,arr[i]);
         large = max(large,arr[i]);
     }
@@ -36,8 +36,7 @@ void GetSwap(int *arr, int n,int k){
     {
         cout<<arr[i]<<" "<<end;
     }
-    
-    
+
 }
 int main(){
     int arr[]={1,2,4,6,7,5};
