@@ -2,7 +2,6 @@ import java.util.*;
 
 class BuyandSell {
     public static int maxProfit(int arr[]){
-
         int Profit=0;
         int mini = arr[0];
         for(int i=0;i<arr.length;i++){

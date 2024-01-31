@@ -15,9 +15,11 @@ int maxProductSubArray(vector<int>& nums) {
 }
 
 int main() {
-    // vector<int> nums = {1,2,-3,0,-4,-5};
-    vector<int> nums = {40,50,10,230,20};
-    // cout<<"The maximum product subarray: "<<maxProductSubArray(nums)<<endl;
+    vector<int> nums = {1,2,-3,0,-4,-5};
+    cout<<"The maximum product subarray: "<<maxProductSubArray(nums)<<endl;
+
+    
+    // vector<int> nums = {40,50,10,230,20};
 
     for (int i = 0; i < nums.size(); i++)
     {

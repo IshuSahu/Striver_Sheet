@@ -18,6 +18,7 @@
                 ans = Math.min(ans, arr[mid]); // take out the minimum and Go to the next half
                 high = mid - 1;
             }
+            
         }
         return ans; 
     }

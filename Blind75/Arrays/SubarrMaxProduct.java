@@ -8,8 +8,8 @@ public class SubarrMaxProduct {
                 Result = Math.max(p, Result);
                 p*=arr[j];
             }
-            Result = Math.max(Result, p);
-
+            Result = Math.max(Result, p); 
+            
         }
         return Result;
     }

@@ -38,7 +38,7 @@ bool bSearch(int elem, int arr[], int n){
 
 bool isSubset(int arr1[], int m, int arr2[], int n){
     
-    sort(arr2,arr2+n); // library function to sort the array
+    sort(arr2,arr2+n); // library function to sort the array time complecity: O(N * log(N))
     
     if(m>n) return false;
     for(int i=0; i<m; i++){
