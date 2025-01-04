@@ -15,7 +15,6 @@ void solve(string str, int n) {
     }
   }
   
-
   cout << "Resultant string: " << "\n";
   cout << str << "\n";
 }

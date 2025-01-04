@@ -1,21 +1,19 @@
 #include <bits/stdc++.h>
+// #include<string>
+using namespace std; 
 
-#include<string>
-
-using namespace std;
-
-int foundPattern(string text, string pattern) {
+int foundPattern(string text, string pattern) { 
   int N = text.length();
-  int M = pattern.length();
+  int M = pattern.length(); 
 
-  for (int i = 0; i < N; i++) {
-    int temp = i;
+  for (int i = 0; i < N; i++) { 
+    int temp = i; 
     int j = 0;
     for (j = 0; j < M; j++) {
       if (text[temp] != pattern[j]) {
         break;
       }
-      temp++;
+      temp++; 
     }
     if (j == M) {
       return i;
@@ -26,12 +24,12 @@ int foundPattern(string text, string pattern) {
 }
 
 int main() {
-  string text = "takeuforward";
+  string text = "takeuforwardinWorld";
   string pattern = "forward";
   int foundIdx = foundPattern(text, pattern);
   cout << "The substring starts from the index: "<<foundIdx << endl;
 
-    foundIdx = text.find(pattern);
+  foundIdx = text.find(pattern);
   cout <<"The substring starts from the index: " <<foundIdx << endl;
   return 0;
 }

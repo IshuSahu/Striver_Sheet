@@ -10,7 +10,13 @@ string solve(string str)
     string ans="";
     for (int i = 0; i < str.length(); i++)
     {
-        ans +=(char)str[i] + 1;
+        char a = (char)str[i] + 1;
+        if(a > 'z'){
+            ans += a -26;
+        }
+        else{
+            ans +=a;
+        }
     }
     
     
@@ -20,7 +26,7 @@ int main()
 {
 
     // Input string
-    string str1 = "Janakram";
+    string str1 = "abcdxyz";
     
     cout << solve(str1) << "\n";
     return 0;
