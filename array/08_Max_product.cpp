@@ -11,28 +11,11 @@ int maxProductSubArray(vector<int>& nums) {
         } 
         result = max(result,p);//manages (n-1)th term 
     }
-    return result;
+    return result; 
 }
 
 int main() {
     vector<int> nums = {1,2,-3,0,-4,-5};
     cout<<"The maximum product subarray: "<<maxProductSubArray(nums)<<endl;
-
-    
-    // vector<int> nums = {40,50,10,230,20};
-
-    for (int i = 0; i < nums.size(); i++)
-    {
-        int count=0;
-        set<int> s;
-        for (int j = 0; j < nums.size(); j++)
-        {
-            if(nums[j]<nums[i]){
-                s.insert(nums[j]);
-            }
-        }
-        cout<<s.size()+1<<" "; 
-    }
-    
     return 0;
 }

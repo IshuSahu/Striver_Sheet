@@ -32,7 +32,7 @@ void findRepeatingElements(vector<int>& arr)
         freqMap[arr[i]]++;
     }
 
-    cout<<"\nThe Non-repeating elements are: ";
+    cout<<"\nThe repeating elements are: ";
     for (const auto &pair : freqMap)
     {
         if(pair.second > 1){
@@ -49,22 +49,27 @@ Output:
  2,-1,3
 */
 void findNonRepeatingElements(vector<int>& arr) {
-    sort(arr.begin(),arr.end());
-    
-    cout<<"\nThe Non-repeating elements are: ";
-    for(int i=0;i<arr.size();i++) {
-       if(arr[i]!=arr[i+1]){
-        cout<<arr[i]<<" ";
-       }else{
-        i++;
-       }
+    int n = arr.size();
+    unordered_map<int, int> freqMap;
+
+    for (int i = 0; i < n; i++)
+    {
+        freqMap[arr[i]]++;
+    }
+
+    cout<<"\nThe repeating elements are: ";
+    for (const auto &pair : freqMap)
+    {
+        if(pair.second ==1){
+            cout << pair.first<< " ";
+        }
     }
         
 }
 
 
 int main() {
-    vector<int> arr = {1,1,2,3,4,4,5,2};
+    vector<int> arr = {1,1,1,2,3,4,4,5,2};
     findRepeatingElements(arr);
     findNonRepeatingElements(arr);
     return 0;

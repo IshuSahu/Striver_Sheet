@@ -32,7 +32,7 @@ int main() {
     // cout << stoi(s, 0, 2);
 }
 
-// Convert Binary to Octal
+// Convert Binary to Octal (biary digits)
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -55,7 +55,7 @@ int main()
 
 	cout << ans;
 }
-
+//value
 void  OctToBinary(int n){
     int dec,r,t=1;
     dec=n;
@@ -69,7 +69,7 @@ void  OctToBinary(int n){
     }
     printf("Binary of octal %d is %d\n",dec, sum);
 }
-
+//value
 void  DecToOct(int n){
     int dec,r,t=1;
     dec=n;
@@ -85,6 +85,7 @@ void  DecToOct(int n){
     OctToBinary(sum);
 }
 
+//values
 int OctaltoDecimal(int Octal)
 {
   int Decimal = 0;
@@ -99,6 +100,7 @@ int OctaltoDecimal(int Octal)
   return Decimal;
 }
 
+//Value
 void  HexToBinary(int n){
     int dec,r,t=1;
     dec=n;
@@ -113,6 +115,7 @@ void  HexToBinary(int n){
     printf("Binary of Hex %d is %d\n",dec, sum);
     
 }
+//value
 void  DecToHex(int n){
     int dec,r,t=1;
     dec=n;
